@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MY PORTFOLIO WEBSITE</title>
+	<style>
+	* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}</style>
+</head>
+<body>
+<h1>My First Portfolio</h1>
+
+				
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('home')"> Home</button>
+  <div> 
+<h2>Welcome to this website</h2>
+<img src="welcome.png" width="400px">
+
+
+
+  </div>
+
+  <button class="btn " onclick="filterSelection('my skills')"> My Skills</button>
+  <div>
+  <h2>I have learnt C and C++ as programming language. </h2>
+  <img src="c lang.png" width="200px">
+  <h3>Currently, I am doing practice on Hackerrank. Learning some useful concepts about C language and DSA.</h3>
+  </div>  
+  <button class="btn" onclick="filterSelection('about')"> About</button> 
+  <div>
+<h3>My name is Ritik. I am a student of B.Tech.(IT).</h3>
+<h3>Currently, my main focus is on DSA because it is important for placements.</h3>
+
+
+  </div>
+  <button class="btn" onclick="filterSelection('contact')"> Contact</button>
+  <h3>You can contact me on my mobile no.</h3>
+</div>
+
+
+				
+</body>
+</html>
